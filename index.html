@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!-- Designed by Mehmet Emre Yıldırım | instagram.com/emreyldms/ -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomadic System | Premium Outdoor & Fitness</title>
+    <link rel="icon" type="image/png" href="images/logopng.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="images/logopng.png" alt="Nomadic System Logo" class="nav-logo">
+            </a>
+            <button class="hamburger" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="programlar.html">Programlar</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="#" class="btn btn-nav modal-trigger">Bize Katıl</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Cinematic Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <h1>HER NEREDE<br>OLMAK İSTERSEN</h1>
+            <p class="manifesto">Nomadic System, modern hayatın yoğunluğu içerisinde hareket özgürlüğünü kaybetmek istemeyen insanlar için oluşturulmuş sürdürülebilir bir disiplin sistemidir.</p>
+            <div class="hero-buttons">
+                <a href="programlar.html" class="btn btn-primary">Programları İncele</a>
+                <a href="hakkimizda.html" class="btn btn-nav">Sistemi Keşfet</a>
+                <a href="iletisim.html" class="btn btn-nav">İletişime Geç</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <!-- Manifesto Section -->
+        <section class="manifesto-section reveal">
+            <div class="manifesto-poster">
+                <img src="images/logopng.png" alt="" class="manifesto-watermark">
+                
+                <div class="manifesto-content">
+                    <h2 class="manifesto-title">Nomadic System</h2>
+                    <h3 class="manifesto-slogan">Her Nerede Olmak İstersen</h3>
+                    
+                    <div class="manifesto-text">
+                        <p>Modern dünyanın <span class="highlight-olive">steril odalarından</span>, metal yığınlarından ve sınırlandırılmış rutinlerinden kurtul. Biz bir spor kulübü değiliz. Biz, hareket etmenin en ilkel formunu geri çağıran bir yaşam felsefesiyiz.</p>
+                        
+                        <blockquote class="manifesto-quote">
+                            Bedenini bir makine gibi değil, doğanın ayrılmaz bir parçası olarak yeniden keşfet.
+                        </blockquote>
+                        
+                        <p>Gerçek güç klimalı salonlarda değil, kendi <span class="highlight-burgundy">adaptasyon yeteneğinde</span> gizlidir. Zihnini özgür bırak, bedenin onu takip edecektir.</p>
+                    </div>
+
+                    <div class="manifesto-badges">
+                        <span class="badge">Evinde</span>
+                        <span class="badge">İş Yerinde</span>
+                        <span class="badge">Açık Alanda</span>
+                        <span class="badge">Seyahatte</span>
+                    </div>
+                </div>
+                
+                <div class="manifesto-visual">
+                    <img src="images/logopng.png" alt="Nomadic System Logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section id="antrenman" class="features-section">
+            <div class="section-header reveal">
+                <h2>Disiplinler</h2>
+                <p>Modern dünyanın kaosundan uzakta, fonksiyonel gücünü yeniden keşfet.</p>
+            </div>
+            <div class="cards-container">
+                <div class="card reveal">
+                    <h3>Birebir Koçluk</h3>
+                    <p>Fiziksel ve zihinsel sınırlarını zorlayacak, tamamen sana özel kurgulanmış premium antrenman seansları.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.1s;">
+                    <h3>Urban Fitness</h3>
+                    <p>Şehri bir oyun alanına çevir. Kendi vücut ağırlığınla nerede olursan ol forma gir.</p>
+                </div>
+                <div class="card reveal" style="transition-delay: 0.2s;">
+                    <h3>Gece Kampı</h3>
+                    <p>Doğanın kalbinde, yıldızların altında dayanıklılığını test eden ekstrem outdoor deneyimi.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="iletisim">
+        <div class="footer-content reveal">
+            <img src="images/logopng.png" alt="Nomadic System" style="width: 80px; opacity: 0.5;">
+            <p class="footer-manifesto">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <div class="social-links">
+                <a href="mailto:systemnomadic@gmail.com" class="email-glow">Email</a>
+                <a href="#">Instagram</a>
+                <a href="#">X / Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="current-year">2026</span> Nomadic System. Doğaya Dönüş ve Dijital Göçebelik.
+        </div>
+    </footer>
+
+    <!-- Popbox / Modal -->
+    <div class="modal-overlay" id="joinModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2>Yolculuğa Katıl</h2>
+            <p style="color: var(--text-muted); margin-bottom: var(--spacing-md);">Doğanın çağrısına kulak ver. E-posta adresini bırak, dijital göçebe rotamıza dahil ol.</p>
+            <form class="modal-form">
+                <input type="email" placeholder="E-Posta Adresiniz" required>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

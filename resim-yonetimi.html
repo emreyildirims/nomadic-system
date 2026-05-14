@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<!-- Designed by Mehmet Emre Yıldırım | instagram.com/emreyldms/ -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Dashboard | Nomadic System</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #f3f4f6;
+            padding: 2rem 5%;
+            color: #1f2937;
+            margin: 0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        h1 { color: #111827; font-weight: 600; font-size: 2rem; margin-bottom: 0.5rem; }
+        p.desc { color: #6b7280; font-size: 1rem; }
+        
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .image-card {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .image-card:hover { transform: translateY(-5px); }
+        
+        .img-preview {
+            width: 100%;
+            height: 180px;
+            background: #e5e7eb;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            cursor: pointer;
+            margin-bottom: 1rem;
+            border: 1px solid #d1d5db;
+        }
+        .img-preview img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .img-preview:hover img { transform: scale(1.05); }
+        
+        .file-name {
+            display: inline-block;
+            background: #fef2f2;
+            color: #991b1b;
+            padding: 0.4rem 0.8rem;
+            border-radius: 6px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            border: 1px solid #fecaca;
+        }
+        .card-details {
+            font-size: 0.9rem;
+            color: #4b5563;
+            line-height: 1.5;
+        }
+        .card-details strong { color: #111827; }
+        .card-details span.tag {
+            background: #dcfce7;
+            color: #166534;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Lightbox Modal */
+        .lightbox {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.9);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; visibility: hidden; transition: opacity 0.3s ease;
+            z-index: 9999; cursor: pointer;
+        }
+        .lightbox.active { opacity: 1; visibility: visible; }
+        .lightbox img { max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Media Dashboard</h1>
+        <p class="desc">Sistemde kullanılan görsellerin listesi ve kullanım alanları.</p>
+    </header>
+    
+    <div class="dashboard-grid">
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/logopng.png" alt="Logo"></div>
+            <div class="file-name">logopng.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Navbar, Footer ve Manifesto bölümleri.</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/1v1logo.png" alt="1V1 Logo"></div>
+            <div class="file-name">1v1logo.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Programlar sayfasındaki 1V1 SYSTEM section'ı.</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/camplogo.png" alt="Camp Logo"></div>
+            <div class="file-name">camplogo.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Programlar sayfasındaki NOMADIC CAMP section'ı.</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/ornekhaftalikprogram.png" alt="Haftalık Program"></div>
+            <div class="file-name">ornekhaftalikprogram.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Örnek Programlar sayfası (Haftalık Planlama Bölümü).</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/ornekbeslenme.png" alt="Beslenme"></div>
+            <div class="file-name">ornekbeslenme.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Örnek Programlar sayfası (Beslenme Planı Örneği Bölümü).</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/planlariuygulamarehber.png" alt="Rehber 1"></div>
+            <div class="file-name">planlariuygulamarehber.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Örnek Programlar sayfası (Planları Uygulama Rehberi).</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+        
+        <div class="image-card">
+            <div class="img-preview" onclick="openLightbox(this)"><img src="images/planlariuygulamarehber2.png" alt="Rehber 2"></div>
+            <div class="file-name">planlariuygulamarehber2.png</div>
+            <div class="card-details">
+                <p><strong>Kullanım Alanı:</strong> Örnek Programlar sayfası (Planları Uygulama Rehberi).</p>
+                <p><strong>Durum:</strong> <span class="tag">Aktif Kullanımda</span></p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Büyük Önizleme">
+    </div>
+
+    <script>
+        function openLightbox(elem) {
+            const imgSrc = elem.querySelector('img').src;
+            document.getElementById('lightbox-img').src = imgSrc;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+    </script>
+</body>
+</html>

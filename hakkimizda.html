@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- Designed by Mehmet Emre Yıldırım | instagram.com/emreyldms/ -->
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda | Nomadic System</title>
+    <link rel="icon" type="image/png" href="images/logopng.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="images/logopng.png" alt="Nomadic System Logo" class="nav-logo">
+            </a>
+            <button class="hamburger" aria-label="Menüyü Aç">
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html" class="active">Hakkımızda</a></li>
+                    <li><a href="programlar.html">Programlar</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                    <li><a href="#" class="btn btn-nav modal-trigger">Bize Katıl</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Manifesto Section -->
+        <section class="manifesto-section reveal" style="padding-top: var(--spacing-xl);">
+            <div class="manifesto-poster">
+                <img src="images/logopng.png" alt="" class="manifesto-watermark">
+                
+                <div class="manifesto-content" style="width: 100%;">
+                    <div class="manifesto-text">
+                        <p class="manifesto-intro">Biz, hareket etmenin en ilkel formunu geri çağıran, bedeni ve zihni özgürleştiren bir <span class="highlight-olive">süreç arkadaşlığı</span> sistemiyiz.</p>
+
+                        <p>Modern dünyanın steril odalarında; bitmek bilmeyen <span class="highlight-burgundy">ulaşım</span> dertleri ve uzun <span class="highlight-burgundy">hazırlık süresi</span> ile çalınan zamanını sana geri veriyoruz.</p>
+
+                        <blockquote class="manifesto-quote">
+                            Hareket etmek için <span class="highlight-olive">zorunlu konumlar</span> icat etme. Sınırları aş ve kendi doğana dön.
+                        </blockquote>
+
+                        <div class="manifesto-services-wrapper">
+                            <div class="manifesto-cards">
+                                <div class="m-card">Çevrimiçi Görüntülü Birebir Antrenmanlar</div>
+                                <div class="m-card">Çevrimiçi Grup Dersleri</div>
+                                <div class="m-card">Haftalık Antrenman ve Beslenme Planlaması Takibi</div>
+                            </div>
+                            <div class="manifesto-services-logo">
+                                <img src="images/logopng.png" alt="Nomadic System Logo">
+                            </div>
+                        </div>
+                        
+                        <p>Sadece sana özel tasarlanan <span class="highlight-olive">antrenman programları</span> ile fiziksel kapasiteni zorlarken, hayatın akışına uyum sağla. Hayatın değişen temposunda, programında daima bir <span class="highlight-burgundy">esnetme hakkı</span> bulunur. Çünkü disiplin esneklikle buluştuğunda ve süreçte <span class="highlight-olive">keyif arttıkça</span> kalıcı sonuçlar inşa edilir.</p>
+                    </div>
+
+                    <div class="manifesto-center-block">
+                        <h3 class="manifesto-center-heading">HER NEREDE OLMAK İSTERSEN</h3>
+                        <div class="manifesto-badges center-badges">
+                            <span class="badge">Evinde</span>
+                            <span class="badge">İş Yerinde</span>
+                            <span class="badge">Açık Alanda</span>
+                            <span class="badge">İş Seyahati</span>
+                            <span class="badge">Tatilde</span>
+                            <span class="badge">Otel Odasında</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section style="margin-top: var(--spacing-xl);">
+            <h2 class="accent-text">Kurucu: Cankut Kaba</h2>
+            <div class="card founder-card" style="display: flex; align-items: center; gap: var(--spacing-lg); text-align: left;">
+                <div class="founder-image-wrapper">
+                    <img src="images/logo.png" alt="Cankut Kaba Profil" class="founder-image">
+                </div>
+                <p>Yıllarını geleneksel spor salonu duvarları ardında harcamış ve ardından dijital göçebeliğin sunduğu özgürlüğü keşfetmiş bir vizyoner. Antrenmanın mekana bağlı olmadığına inanan Cankut, doğayı bir enstrüman olarak kullanarak beden ile zihin arasındaki kaybolmuş bağı onarıyor.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content reveal">
+            <img src="images/logopng.png" alt="Nomadic System" style="width: 80px; opacity: 0.5;">
+            <p class="footer-manifesto">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <div class="social-links">
+                <a href="mailto:systemnomadic@gmail.com" class="email-glow">Email</a>
+                <a href="#">Instagram</a>
+                <a href="#">X / Twitter</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; <span id="current-year">2026</span> Nomadic System. Doğaya Dönüş ve Dijital Göçebelik.
+        </div>
+    </footer>
+
+    <!-- Popbox / Modal -->
+    <div class="modal-overlay" id="joinModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">&times;</button>
+            <h2>Yolculuğa Katıl</h2>
+            <p style="color: var(--text-muted); margin-bottom: var(--spacing-md);">Doğanın çağrısına kulak ver. E-posta adresini bırak, dijital göçebe rotamıza dahil ol.</p>
+            <form class="modal-form">
+                <input type="email" placeholder="E-Posta Adresiniz" required>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
