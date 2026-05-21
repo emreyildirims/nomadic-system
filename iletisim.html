@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- METIN DUZENLEME REHBERI: CTRL+F ile "EDIT:" arat. tr-text Turkce, en-text Ingilizce metindir. -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
@@ -20,56 +21,68 @@
             </button>
             <nav>
                 <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="programlar.html">Programlar</a></li>
-                    <li><a href="iletisim.html" class="active">İletişim</a></li>
-                    <li><a href="#" class="btn btn-nav modal-trigger">Bize Katıl</a></li>
+                    <li><a href="index.html"><span class="tr-text">Ana Sayfa</span><span class="en-text">Home</span></a></li>
+                    <li><a href="hakkimizda.html"><span class="tr-text">Hakkımızda</span><span class="en-text">About</span></a></li>
+                    <li><a href="programlar.html"><span class="tr-text">Programlar</span><span class="en-text">Programs</span></a></li>
+                    <li><a href="iletisim.html" class="active"><span class="tr-text">İletişim</span><span class="en-text">Contact</span></a></li>
+                    <li><a href="https://wa.me/905398380835?text=Merhaba,%20Nomadic%20System%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-nav"><span class="tr-text">Bize Katıl</span><span class="en-text">Join Us</span></a></li>
+                    <li class="lang-toggle">
+                        <a href="#" class="lang-btn" data-lang="tr">TR</a>
+                        <span class="lang-separator">|</span>
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
+    <!-- EDIT: ILETISIM SAYFASI - Baslik, aciklama, form etiketleri ve buton metni -->
+    <main class="contact-page">
         <div class="card" style="max-width: 600px; margin: 0 auto; text-align: left;">
-            <h1 style="text-align: center;">Bize Ulaşın</h1>
-            <p style="text-align: center; margin-bottom: var(--spacing-lg);">Dijital göçebelik serüvenine katılmak için ilk adımı at.</p>
+            <h1 style="text-align: center;" class="tr-text">Bize Ulaşın</h1> <!-- EDIT: ILETISIM BASLIK TR -->
+            <h1 style="text-align: center;" class="en-text">Contact Us</h1> <!-- EDIT: ILETISIM BASLIK EN -->
+            <p style="text-align: center; margin-bottom: var(--spacing-lg);" class="tr-text">Dijital göçebelik serüvenine katılmak için ilk adımı at.</p> <!-- EDIT: ILETISIM ACIKLAMA TR -->
+            <p style="text-align: center; margin-bottom: var(--spacing-lg);" class="en-text">Take the first step to join the digital nomad adventure.</p> <!-- EDIT: ILETISIM ACIKLAMA EN -->
             
             <form action="#" method="POST" style="display: flex; flex-direction: column; gap: var(--spacing-md);">
                 <div style="display: flex; flex-direction: column; gap: var(--spacing-xs);">
-                    <label for="isim" style="font-weight: bold; color: var(--main-color);">Adınız</label>
+                    <label for="isim" style="font-weight: bold; color: var(--main-color);"><span class="tr-text">Adınız</span><span class="en-text">Your Name</span></label> <!-- EDIT: FORM AD ETIKETI -->
                     <input type="text" id="isim" name="isim">
                 </div>
                 
                 <div style="display: flex; flex-direction: column; gap: var(--spacing-xs);">
-                    <label for="email" style="font-weight: bold; color: var(--main-color);">E-Posta Adresiniz</label>
+                    <label for="email" style="font-weight: bold; color: var(--main-color);"><span class="tr-text">E-Posta Adresiniz</span><span class="en-text">Email Address</span></label> <!-- EDIT: FORM EMAIL ETIKETI -->
                     <input type="email" id="email" name="email">
                 </div>
 
                 <div style="display: flex; flex-direction: column; gap: var(--spacing-xs);">
-                    <label for="mesaj" style="font-weight: bold; color: var(--main-color);">Mesajınız</label>
+                    <label for="mesaj" style="font-weight: bold; color: var(--main-color);"><span class="tr-text">Mesajınız</span><span class="en-text">Your Message</span></label> <!-- EDIT: FORM MESAJ ETIKETI -->
                     <textarea id="mesaj" name="mesaj" rows="5"></textarea>
                 </div>
                 
                 <div style="text-align: center;">
-                    <button type="submit" class="btn">Mesajı Gönder</button>
+                    <button type="submit" class="btn">
+                        <span class="tr-text">Mesajı Gönder</span>
+                        <span class="en-text">Send Message</span>
+                    </button>
                 </div>
             </form>
         </div>
     </main>
 
+    <!-- EDIT: FOOTER - Alt kisim manifesto, mail ve Instagram linki -->
     <footer>
         <div class="footer-content reveal">
-            <img src="images/logopng.png" alt="Nomadic System" style="width: 80px; opacity: 0.5;">
-            <p class="footer-manifesto">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <img src="images/logopng.png" alt="Nomadic System" class="footer-logo">
+            <p class="footer-manifesto tr-text">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <p class="footer-manifesto en-text">"Nomadic System is not a gym. It is a sustainable movement culture."</p>
             <div class="social-links">
-                <a href="mailto:systemnomadic@gmail.com" class="email-glow">Email</a>
-                <a href="#">Instagram</a>
-                <a href="#">X / Twitter</a>
+                <a href="mailto:systemnomadic@gmail.com" class="email-glow">systemnomadic@gmail.com</a>
+                <a href="https://www.instagram.com/systemnomadic/" target="_blank" rel="noopener">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; <span id="current-year">2026</span> Nomadic System. Doğaya Dönüş ve Dijital Göçebelik.
+            &copy; <span id="current-year">2026</span> Nomadic System. <span class="tr-text">Doğaya Dönüş ve Dijital Göçebelik.</span><span class="en-text">Return to nature. Move without borders.</span>
         </div>
     </footer>
 
