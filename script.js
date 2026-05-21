@@ -1,7 +1,7 @@
 // Designed by Mehmet Emre Yıldırım | instagram.com/emreyldms/
 document.addEventListener("DOMContentLoaded", () => {
     
-    document.body.classList.add('page-entered');
+    document.body.classList.add('page-entered'); // Sayfa acildiginda yumuşak giris efektini baslatir.
 
     // Otomatik yıl güncellemesi
     const currentYearSpan = document.getElementById("current-year");
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
         currentYearSpan.textContent = new Date().getFullYear();
     }
 
-    const navLinks = document.querySelectorAll('a[href]:not([href^="#"]):not([target="_blank"])');
+    const navLinks = document.querySelectorAll('a[href]:not([href^="#"]):not([target="_blank"])'); // Yeni sekmede acilmayan normal sayfa linkleri.
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             if(link.classList.contains('modal-trigger')) return;
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             setTimeout(() => {
                 window.location.href = targetUrl;
-            }, 500);
+            }, 180);
         });
     });
 
@@ -44,13 +44,20 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.querySelector("nav");
+    const hamburger = document.querySelector(".hamburger"); // Mobilde sag ustteki menu butonu.
+    const nav = document.querySelector("nav"); // Navbar menu alani.
 
     if (hamburger && nav) {
         hamburger.addEventListener("click", () => {
             hamburger.classList.toggle("active");
             nav.classList.toggle("active");
+        });
+
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                nav.classList.remove("active");
+            });
         });
     }
 
@@ -65,10 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const observerOptions = {
+    const observerOptions = { // Scroll animasyonlarinin ne zaman baslayacagini belirler.
         root: null,
-        rootMargin: '0px',
-        threshold: 0.15
+        rootMargin: '0px 0px -6% 0px',
+        threshold: 0.04
     };
 
     const observer = new IntersectionObserver((entries, observer) => {
@@ -84,31 +91,29 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(el);
     });
 
-    const modalTriggers = document.querySelectorAll(".modal-trigger");
-    const modal = document.getElementById("joinModal");
-    const closeModal = document.getElementById("closeModal");
-
-    if (modal) {
-        modalTriggers.forEach(btn => {
-            btn.addEventListener("click", (e) => {
-                e.preventDefault();
-                modal.classList.add("active");
-            });
+    // Language Toggle Logic
+    const langBtns = document.querySelectorAll('.lang-btn'); // TR / EN dil butonlari.
+    const setLanguage = (lang) => {
+        document.documentElement.setAttribute('lang', lang); // HTML dilini degistirir; CSS hangi dili gosterecegini buradan anlar.
+        localStorage.setItem('nomadic_lang', lang); // Secilen dili tarayicida saklar.
+        langBtns.forEach(btn => {
+            if (btn.dataset.lang === lang) btn.classList.add('active');
+            else btn.classList.remove('active');
         });
+    };
 
-        closeModal.addEventListener("click", () => {
-            modal.classList.remove("active");
+    const savedLang = localStorage.getItem('nomadic_lang') || 'tr';
+    setLanguage(savedLang);
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            setLanguage(btn.dataset.lang);
         });
+    });
 
-        modal.addEventListener("click", (e) => {
-            if (e.target === modal) {
-                modal.classList.remove("active");
-            }
-        });
-    }
-
-    const tabBtns = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
+    const tabBtns = document.querySelectorAll('.tab-btn'); // Programlar sayfasindaki sekme butonlari.
+    const tabContents = document.querySelectorAll('.tab-content'); // Sekmelerin acip kapattigi icerik alanlari.
 
     if(tabBtns.length > 0) {
         tabBtns.forEach(btn => {

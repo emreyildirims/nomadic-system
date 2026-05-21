@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomadic System | Premium Outdoor & Fitness</title>
+    <title>Nomadic System | Premium Outdoor &amp; Fitness</title>
     <link rel="icon" type="image/png" href="images/logopng.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- METIN DUZENLEME REHBERI: CTRL+F ile "EDIT:" arat. tr-text Turkce, en-text Ingilizce metindir. -->
 
-    <!-- Navbar -->
+    <!-- EDIT: NAVBAR MENULERI - Ust menude gorunen sayfa isimleri ve Bize Katil butonu -->
     <header>
         <div class="nav-container">
             <a href="#" class="logo">
@@ -22,55 +23,76 @@
             </button>
             <nav>
                 <ul>
-                    <li><a href="index.html" class="active">Ana Sayfa</a></li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="programlar.html">Programlar</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                    <li><a href="#" class="btn btn-nav modal-trigger">Bize Katıl</a></li>
+                    <li><a href="index.html" class="active"><span class="tr-text">Ana Sayfa</span><span class="en-text">Home</span></a></li> <!-- Navbar: Ana Sayfa linki -->
+                    <li><a href="hakkimizda.html"><span class="tr-text">Hakkımızda</span><span class="en-text">About</span></a></li>
+                    <li><a href="programlar.html"><span class="tr-text">Programlar</span><span class="en-text">Programs</span></a></li>
+                    <li><a href="iletisim.html"><span class="tr-text">İletişim</span><span class="en-text">Contact</span></a></li>
+                    <li><a href="https://wa.me/905398380835?text=Merhaba,%20Nomadic%20System%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-nav"><span class="tr-text">Bize Katıl</span><span class="en-text">Join Us</span></a></li>
+                    <li class="lang-toggle">
+                        <a href="#" class="lang-btn" data-lang="tr">TR</a>
+                        <span class="lang-separator">|</span>
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Cinematic Hero Section -->
+    <!-- EDIT: ANASAYFA HERO - Ilk ekranda gorunen buyuk baslik, aciklama ve butonlar -->
     <section class="hero">
         <div class="hero-overlay"></div>
         <div class="hero-content reveal">
-            <h1>HER NEREDE<br>OLMAK İSTERSEN</h1>
-            <p class="manifesto">Nomadic System, modern hayatın yoğunluğu içerisinde hareket özgürlüğünü kaybetmek istemeyen insanlar için oluşturulmuş sürdürülebilir bir disiplin sistemidir.</p>
+            <h1 class="tr-text">HER NEREDE<br>OLMAK İSTERSEN</h1> <!-- EDIT: HERO BASLIK TR -->
+            <h1 class="en-text">WHEREVER YOU<br>WANT TO BE</h1> <!-- EDIT: HERO BASLIK EN -->
+            <p class="manifesto tr-text">Nomadic System, modern hayatın yoğunluğu içerisinde hareket özgürlüğünü kaybetmek istemeyen insanlar için oluşturulmuş sürdürülebilir bir disiplin sistemidir.</p> <!-- EDIT: HERO ACIKLAMA TR -->
+            <p class="manifesto en-text">Nomadic System is a sustainable discipline built for those who refuse to lose their freedom of movement amidst the chaos of modern life.</p> <!-- EDIT: HERO ACIKLAMA EN -->
             <div class="hero-buttons">
-                <a href="programlar.html" class="btn btn-primary">Programları İncele</a>
-                <a href="hakkimizda.html" class="btn btn-nav">Sistemi Keşfet</a>
-                <a href="iletisim.html" class="btn btn-nav">İletişime Geç</a>
+                <a href="programlar.html" class="btn btn-primary"><span class="tr-text">Programları İncele</span><span class="en-text">Explore Programs</span></a>
+                <a href="hakkimizda.html" class="btn btn-nav"><span class="tr-text">Sistemi Keşfet</span><span class="en-text">Discover System</span></a>
+                <a href="iletisim.html" class="btn btn-nav"><span class="tr-text">İletişime Geç</span><span class="en-text">Contact Us</span></a>
             </div>
         </div>
     </section>
 
     <main>
-        <!-- Manifesto Section -->
-        <section class="manifesto-section reveal">
-            <div class="manifesto-poster">
+        <!-- EDIT: ANASAYFA MANIFESTO - Logo karti, manifesto paragraflari, quote ve rozetler -->
+        <section class="manifesto-section home-manifesto reveal">
+            <div class="manifesto-poster dark-board">
                 <img src="images/logopng.png" alt="" class="manifesto-watermark">
                 
                 <div class="manifesto-content">
-                    <h2 class="manifesto-title">Nomadic System</h2>
-                    <h3 class="manifesto-slogan">Her Nerede Olmak İstersen</h3>
+                    <h2 class="manifesto-title tr-text">Nomadic System</h2> <!-- EDIT: MANIFESTO BASLIK TR -->
+                    <h2 class="manifesto-title en-text">Nomadic System</h2> <!-- EDIT: MANIFESTO BASLIK EN -->
+                    
+                    <h3 class="manifesto-slogan tr-text">Her Nerede Olmak İstersen</h3> <!-- EDIT: MANIFESTO ALT BASLIK TR -->
+                    <h3 class="manifesto-slogan en-text">Wherever You Want To Be</h3> <!-- EDIT: MANIFESTO ALT BASLIK EN -->
                     
                     <div class="manifesto-text">
-                        <p>Modern dünyanın <span class="highlight-olive">steril odalarından</span>, metal yığınlarından ve sınırlandırılmış rutinlerinden kurtul. Biz bir spor kulübü değiliz. Biz, hareket etmenin en ilkel formunu geri çağıran bir yaşam felsefesiyiz.</p>
+                        <p class="tr-text">Modern dünyanın <span class="highlight-olive">steril odalarından</span>, metal yığınlarından ve sınırlandırılmış rutinlerinden kurtul. Biz bir spor kulübü değiliz. Biz, hareket etmenin en ilkel formunu geri çağıran bir yaşam felsefesiyiz.</p> <!-- EDIT: MANIFESTO PARAGRAF 1 TR -->
+                        <p class="en-text">Break free from the <span class="highlight-olive">sterile rooms</span>, piles of metal, and restricted routines of the modern world. We are not a sports club. We are a lifestyle philosophy recalling the most primal form of movement.</p> <!-- EDIT: MANIFESTO PARAGRAF 1 EN -->
                         
-                        <blockquote class="manifesto-quote">
+                        <blockquote class="manifesto-quote tr-text"> <!-- EDIT: MANIFESTO QUOTE TR -->
                             Bedenini bir makine gibi değil, doğanın ayrılmaz bir parçası olarak yeniden keşfet.
                         </blockquote>
+                        <blockquote class="manifesto-quote en-text"> <!-- EDIT: MANIFESTO QUOTE EN -->
+                            Rediscover your body not as a machine, but as an integral part of nature.
+                        </blockquote>
                         
-                        <p>Gerçek güç klimalı salonlarda değil, kendi <span class="highlight-burgundy">adaptasyon yeteneğinde</span> gizlidir. Zihnini özgür bırak, bedenin onu takip edecektir.</p>
+                        <p class="tr-text">Gerçek güç klimalı salonlarda değil, kendi <span class="highlight-burgundy">adaptasyon yeteneğinde</span> gizlidir. Zihnini özgür bırak, bedenin onu takip edecektir.</p>
+                        <p class="en-text">Real strength lies not in air-conditioned halls, but in your own <span class="highlight-burgundy">adaptability</span>. Free your mind, your body will follow.</p>
                     </div>
 
-                    <div class="manifesto-badges">
+                    <div class="manifesto-badges tr-text">
                         <span class="badge">Evinde</span>
                         <span class="badge">İş Yerinde</span>
                         <span class="badge">Açık Alanda</span>
                         <span class="badge">Seyahatte</span>
+                    </div>
+                    <div class="manifesto-badges en-text">
+                        <span class="badge">At Home</span>
+                        <span class="badge">At Work</span>
+                        <span class="badge">Outdoors</span>
+                        <span class="badge">Traveling</span>
                     </div>
                 </div>
                 
@@ -80,42 +102,50 @@
             </div>
         </section>
 
-        <!-- Cards Section -->
+        <!-- EDIT: ANASAYFA DISIPLINLER - Uc kartin baslik ve aciklamalari -->
         <section id="antrenman" class="features-section">
             <div class="section-header reveal">
-                <h2>Disiplinler</h2>
-                <p>Modern dünyanın kaosundan uzakta, fonksiyonel gücünü yeniden keşfet.</p>
+                <h2 class="tr-text">Disiplinler</h2>
+                <h2 class="en-text">Disciplines</h2>
+                <p class="tr-text">Modern dünyanın kaosundan uzakta, fonksiyonel gücünü yeniden keşfet.</p>
+                <p class="en-text">Rediscover your functional strength far from the chaos of the modern world.</p>
             </div>
             <div class="cards-container">
                 <div class="card reveal">
-                    <h3>Birebir Koçluk</h3>
-                    <p>Fiziksel ve zihinsel sınırlarını zorlayacak, tamamen sana özel kurgulanmış premium antrenman seansları.</p>
+                    <h3 class="tr-text">Birebir Koçluk</h3> <!-- EDIT: KART 1 BASLIK TR -->
+                    <h3 class="en-text">1V1 Coaching</h3>
+                    <p class="tr-text">Fiziksel ve zihinsel sınırlarını zorlayacak, tamamen sana özel kurgulanmış premium antrenman seansları.</p>
+                    <p class="en-text">Premium training sessions exclusively tailored for you, pushing your physical and mental boundaries.</p>
                 </div>
                 <div class="card reveal" style="transition-delay: 0.1s;">
-                    <h3>Urban Fitness</h3>
-                    <p>Şehri bir oyun alanına çevir. Kendi vücut ağırlığınla nerede olursan ol forma gir.</p>
+                    <h3 class="tr-text">Urban Fitness</h3>
+                    <h3 class="en-text">Urban Fitness</h3>
+                    <p class="tr-text">Şehri bir oyun alanına çevir. Kendi vücut ağırlığınla nerede olursan ol forma gir.</p>
+                    <p class="en-text">Turn the city into a playground. Get in shape wherever you are using your body weight.</p>
                 </div>
                 <div class="card reveal" style="transition-delay: 0.2s;">
-                    <h3>Gece Kampı</h3>
-                    <p>Doğanın kalbinde, yıldızların altında dayanıklılığını test eden ekstrem outdoor deneyimi.</p>
+                    <h3 class="tr-text">Gece Kampı</h3>
+                    <h3 class="en-text">Night Camp</h3>
+                    <p class="tr-text">Doğanın kalbinde, yıldızların altında dayanıklılığını test eden ekstrem outdoor deneyimi.</p>
+                    <p class="en-text">An extreme outdoor experience testing your endurance in the heart of nature under the stars.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
+    <!-- EDIT: FOOTER - Alt kisim manifesto, mail ve Instagram linki -->
     <footer id="iletisim">
         <div class="footer-content reveal">
-            <img src="images/logopng.png" alt="Nomadic System" style="width: 80px; opacity: 0.5;">
-            <p class="footer-manifesto">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <img src="images/logopng.png" alt="Nomadic System" class="footer-logo">
+            <p class="footer-manifesto tr-text">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <p class="footer-manifesto en-text">"Nomadic System is not a gym. It is a sustainable movement culture."</p>
             <div class="social-links">
-                <a href="mailto:systemnomadic@gmail.com" class="email-glow">Email</a>
-                <a href="#">Instagram</a>
-                <a href="#">X / Twitter</a>
+                <a href="mailto:systemnomadic@gmail.com" class="email-glow">systemnomadic@gmail.com</a>
+                <a href="https://www.instagram.com/systemnomadic/" target="_blank" rel="noopener">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; <span id="current-year">2026</span> Nomadic System. Doğaya Dönüş ve Dijital Göçebelik.
+            &copy; <span id="current-year">2026</span> Nomadic System. <span class="tr-text">Doğaya Dönüş ve Dijital Göçebelik.</span><span class="en-text">Return to nature. Move without borders.</span>
         </div>
     </footer>
 

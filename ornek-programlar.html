@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="page-transition">
+    <!-- METIN DUZENLEME REHBERI: CTRL+F ile "EDIT:" arat. tr-text Turkce, en-text Ingilizce metindir. -->
     <div id="scroll-progress"></div>
     <header>
         <div class="nav-container">
@@ -21,40 +22,58 @@
             </button>
             <nav>
                 <ul>
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
-                    <li><a href="programlar.html">Programlar</a></li>
-                    <li><a href="iletisim.html">İletişim</a></li>
-                    <li><a href="#" class="btn btn-nav modal-trigger">Bize Katıl</a></li>
+                    <li><a href="index.html"><span class="tr-text">Ana Sayfa</span><span class="en-text">Home</span></a></li>
+                    <li><a href="hakkimizda.html"><span class="tr-text">Hakkımızda</span><span class="en-text">About</span></a></li>
+                    <li><a href="programlar.html"><span class="tr-text">Programlar</span><span class="en-text">Programs</span></a></li>
+                    <li><a href="iletisim.html"><span class="tr-text">İletişim</span><span class="en-text">Contact</span></a></li>
+                    <li><a href="https://wa.me/905398380835?text=Merhaba,%20Nomadic%20System%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener" class="btn btn-nav"><span class="tr-text">Bize Katıl</span><span class="en-text">Join Us</span></a></li>
+                    <li class="lang-toggle">
+                        <a href="#" class="lang-btn" data-lang="tr">TR</a>
+                        <span class="lang-separator">|</span>
+                        <a href="#" class="lang-btn" data-lang="en">EN</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!-- Header Başlık Alanı -->
+        <!-- EDIT: ORNEK PROGRAMLAR HEADER - Sayfa ana basligi ve kisa aciklama -->
         <section class="reveal" style="padding-top: var(--spacing-xl); text-align: center;">
             <div class="section-header">
-                <h2>Coaching Manual</h2>
-                <p style="font-family: var(--font-editorial); font-size: 1.2rem; font-style: italic; color: var(--accent-burgundy);">Disiplinin kağıda dökülmüş hali.</p>
+                <h2>Coaching Manual</h2> <!-- EDIT: ORNEK PROGRAMLAR ANA BASLIK -->
+                <p class="tr-text" style="font-family: var(--font-editorial); font-size: 1.2rem; font-style: italic; color: var(--accent-burgundy);">Disiplinin kağıda dökülmüş hali.</p> <!-- EDIT: ORNEK PROGRAMLAR ACIKLAMA TR -->
+                <p class="en-text" style="font-family: var(--font-editorial); font-size: 1.2rem; font-style: italic; color: var(--accent-burgundy);">The discipline written on paper.</p> <!-- EDIT: ORNEK PROGRAMLAR ACIKLAMA EN -->
             </div>
         </section>
 
         <div class="handbook-showcase-section">
             
-            <!-- 1. BÖLÜM: Haftalık Planlama -->
+            <!-- EDIT: HAFTALIK PLANLAMA BOLUMU - Baslik, aciklama metinleri ve rozetler -->
             <div class="handbook-grid reveal">
                 <div class="handbook-text">
-                    <h2>Haftalık Planlama Sistemi</h2>
-                    <p class="lead" style="color: var(--main-color);">Hayatının ritmine ayak uyduran esnek bir yapı.</p>
-                    <p class="main-desc">Nomadic System'de antrenman programları, senin için bir yük değil; sürdürülebilir bir tempo aracıdır. Hazırlanan saha notları ve program kağıtları ile günlük yoğunluk yönetimini ve kaslarının toparlanma dengesini (recovery) kusursuz bir şekilde takip edersin.</p>
-                    <p class="main-desc">Bu esnek planlama sistemi, haftanın değişen koşullarına göre antrenman günlerini kaydırabilmeni ve disiplininden kopmadan ilerlemeni sağlar.</p>
+                    <h2 class="tr-text">Haftalık Planlama Sistemi</h2> <!-- EDIT: HAFTALIK PLANLAMA BASLIK TR -->
+                    <h2 class="en-text">Weekly Planning System</h2> <!-- EDIT: HAFTALIK PLANLAMA BASLIK EN -->
+                    <p class="lead tr-text" style="color: var(--main-color);">Hayatının ritmine ayak uyduran esnek bir yapı.</p>
+                    <p class="lead en-text" style="color: var(--main-color);">A flexible structure that keeps up with the rhythm of your life.</p>
                     
-                    <div class="info-cards">
+                    <p class="main-desc tr-text">Nomadic System'de antrenman programları, senin için bir yük değil; sürdürülebilir bir tempo aracıdır. Hazırlanan saha notları ve program kağıtları ile günlük yoğunluk yönetimini ve kaslarının toparlanma dengesini (recovery) kusursuz bir şekilde takip edersin.</p>
+                    <p class="main-desc en-text">Training programs in the Nomadic System are not a burden; they are tools for a sustainable pace. You can perfectly track your daily intensity management and muscle recovery balance using the prepared field notes.</p>
+                    
+                    <p class="main-desc tr-text">Bu esnek planlama sistemi, haftanın değişen koşullarına göre antrenman günlerini kaydırabilmeni ve disiplininden kopmadan ilerlemeni sağlar.</p>
+                    <p class="main-desc en-text">This flexible system allows you to shift training days according to the week's changing conditions, ensuring you progress without losing discipline.</p>
+                    
+                    <div class="info-cards tr-text">
                         <div class="info-card">Program Takibi</div>
                         <div class="info-card">Haftalık Planlama</div>
                         <div class="info-card">Disiplin Sistemi</div>
                         <div class="info-card">Günlük Yönlendirme</div>
+                    </div>
+                    <div class="info-cards en-text">
+                        <div class="info-card">Program Tracking</div>
+                        <div class="info-card">Weekly Planning</div>
+                        <div class="info-card">Discipline System</div>
+                        <div class="info-card">Daily Guidance</div>
                     </div>
                 </div>
                 <div class="handbook-image-wrapper">
@@ -64,19 +83,31 @@
 
             <hr style="border: 0; height: 1px; background: rgba(255,255,255,0.05); margin: var(--spacing-xl) 0;">
 
-            <!-- 2. BÖLÜM: Beslenme Planı (Ters Layout) -->
+            <!-- EDIT: BESLENME PLANI BOLUMU - Baslik, aciklama metinleri ve rozetler -->
             <div class="handbook-grid reverse reveal">
                 <div class="handbook-text">
-                    <h2>Beslenme Planı Örneği</h2>
-                    <p class="lead" style="color: var(--accent-burgundy);">Katı yasaklar yerine, sürdürülebilir yakıt yönetimi.</p>
-                    <p class="main-desc">Beslenme rehberimiz, klasik fitness diyetlerinin sıkıcılığından tamamen uzaktır. Vücudunun antrenman şiddetine bağlı olarak değişen enerji ihtiyacını karşılamak için <strong>Karbonhidrat Döngüsü</strong> mantığını kullanırız.</p>
-                    <p class="main-desc">Ağır idman günlerinde performans ve hacmi desteklerken, dinlenme günlerinde sağlıklı yağlar ve protein ile iyileşme sürecini başlatırsın. Bu sistem, sosyal hayatından kopmadan hedefine ulaşmanı sağlayan esnek bir çerçeve sunar.</p>
+                    <h2 class="tr-text">Beslenme Planı Örneği</h2> <!-- EDIT: BESLENME BASLIK TR -->
+                    <h2 class="en-text">Nutrition Plan Example</h2> <!-- EDIT: BESLENME BASLIK EN -->
+                    <p class="lead tr-text" style="color: var(--accent-burgundy);">Katı yasaklar yerine, sürdürülebilir yakıt yönetimi.</p>
+                    <p class="lead en-text" style="color: var(--accent-burgundy);">Sustainable fuel management instead of strict restrictions.</p>
                     
-                    <div class="info-cards">
+                    <p class="main-desc tr-text">Beslenme rehberimiz, klasik fitness diyetlerinin sıkıcılığından tamamen uzaktır. Vücudunun antrenman şiddetine bağlı olarak değişen enerji ihtiyacını karşılamak için <strong>Karbonhidrat Döngüsü</strong> mantığını kullanırız.</p>
+                    <p class="main-desc en-text">Our nutrition guide is far from the boredom of classic fitness diets. We use the <strong>Carbohydrate Cycling</strong> logic to meet your body's changing energy needs based on workout intensity.</p>
+                    
+                    <p class="main-desc tr-text">Ağır idman günlerinde performans ve hacmi desteklerken, dinlenme günlerinde sağlıklı yağlar ve protein ile iyileşme sürecini başlatırsın. Bu sistem, sosyal hayatından kopmadan hedefine ulaşmanı sağlayan esnek bir çerçeve sunar.</p>
+                    <p class="main-desc en-text">You support performance and volume on heavy training days, while initiating recovery with healthy fats and protein on rest days. This system provides a flexible framework, keeping you social.</p>
+                    
+                    <div class="info-cards tr-text">
                         <div class="info-card">Karbonhidrat Döngüsü</div>
                         <div class="info-card">Öğün Planlama</div>
                         <div class="info-card">Günlük Enerji Yönetimi</div>
                         <div class="info-card">Esnek Sistem</div>
+                    </div>
+                    <div class="info-cards en-text">
+                        <div class="info-card">Carb Cycling</div>
+                        <div class="info-card">Meal Planning</div>
+                        <div class="info-card">Energy Management</div>
+                        <div class="info-card">Flexible System</div>
                     </div>
                 </div>
                 <div class="handbook-image-wrapper">
@@ -86,19 +117,31 @@
 
             <hr style="border: 0; height: 1px; background: rgba(255,255,255,0.05); margin: var(--spacing-xl) 0;">
 
-            <!-- 3. BÖLÜM: Planları Uygulama Rehberi -->
+            <!-- EDIT: PLANLARI UYGULAMA REHBERI BOLUMU - Baslik, aciklama metinleri ve rozetler -->
             <div class="handbook-grid reveal">
                 <div class="handbook-text">
-                    <h2>Planları Uygulama Rehberi</h2>
-                    <p class="lead" style="color: var(--main-color);">Haritayı nasıl okuman gerektiğini öğren.</p>
-                    <p class="main-desc">Premium coaching (koçluk) kılavuzu, programının dilini çözmen için tasarlanmıştır. Program ikonları, hareketlerin tempo (tempo süresi) ve dinlenme aralıkları (rest period) gibi ince detaylar burada berraklaşır.</p>
-                    <p class="main-desc">Bireysel antrenmanlarla grup seansları arasındaki renk kodlamalarını ve antrenmanın arkasında yatan biyomekanik mantığı öğrenerek, her idmana tam bir farkındalıkla girersin. Ezberlemez, neyi neden yaptığını bilirsin.</p>
+                    <h2 class="tr-text">Planları Uygulama Rehberi</h2> <!-- EDIT: UYGULAMA REHBERI BASLIK TR -->
+                    <h2 class="en-text">Plan Implementation Guide</h2> <!-- EDIT: UYGULAMA REHBERI BASLIK EN -->
+                    <p class="lead tr-text" style="color: var(--main-color);">Haritayı nasıl okuman gerektiğini öğren.</p>
+                    <p class="lead en-text" style="color: var(--main-color);">Learn how to read the map.</p>
                     
-                    <div class="info-cards">
+                    <p class="main-desc tr-text">Premium coaching (koçluk) kılavuzu, programının dilini çözmen için tasarlanmıştır. Program ikonları, hareketlerin tempo (tempo süresi) ve dinlenme aralıkları (rest period) gibi ince detaylar burada berraklaşır.</p>
+                    <p class="main-desc en-text">The premium coaching guide is designed to help you decode the language of your program. Fine details such as tempo and rest periods become clear here.</p>
+                    
+                    <p class="main-desc tr-text">Bireysel antrenmanlarla grup seansları arasındaki renk kodlamalarını ve antrenmanın arkasında yatan biyomekanik mantığı öğrenerek, her idmana tam bir farkındalıkla girersin. Ezberlemez, neyi neden yaptığını bilirsin.</p>
+                    <p class="main-desc en-text">By learning the color codings and the biomechanical logic behind the workout, you enter each session with full awareness. You don't memorize; you know what you are doing and why.</p>
+                    
+                    <div class="info-cards tr-text">
                         <div class="info-card">Renk Kodları</div>
                         <div class="info-card">İkon Okuma</div>
                         <div class="info-card">Antrenman Mantığı</div>
                         <div class="info-card">Süreç Takibi</div>
+                    </div>
+                    <div class="info-cards en-text">
+                        <div class="info-card">Color Codes</div>
+                        <div class="info-card">Icon Reading</div>
+                        <div class="info-card">Workout Logic</div>
+                        <div class="info-card">Process Tracking</div>
                     </div>
                 </div>
                 <div class="handbook-image-wrapper">
@@ -110,18 +153,19 @@
         </div>
     </main>
 
+    <!-- EDIT: FOOTER - Alt kisim manifesto, mail ve Instagram linki -->
     <footer>
         <div class="footer-content reveal">
-            <img src="images/logopng.png" alt="Nomadic System" style="width: 80px; opacity: 0.5;">
-            <p class="footer-manifesto">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <img src="images/logopng.png" alt="Nomadic System" class="footer-logo">
+            <p class="footer-manifesto tr-text">"Nomadic System bir spor salonu değil, sürdürülebilir hareket kültürüdür."</p>
+            <p class="footer-manifesto en-text">"Nomadic System is not a gym. It is a sustainable movement culture."</p>
             <div class="social-links">
-                <a href="mailto:systemnomadic@gmail.com" class="email-glow">Email</a>
-                <a href="#">Instagram</a>
-                <a href="#">X / Twitter</a>
+                <a href="mailto:systemnomadic@gmail.com" class="email-glow">systemnomadic@gmail.com</a>
+                <a href="https://www.instagram.com/systemnomadic/" target="_blank" rel="noopener">Instagram</a>
             </div>
         </div>
         <div class="footer-bottom">
-            &copy; <span id="current-year">2026</span> Nomadic System. Doğaya Dönüş ve Dijital Göçebelik.
+            &copy; <span id="current-year">2026</span> Nomadic System. <span class="tr-text">Doğaya Dönüş ve Dijital Göçebelik.</span><span class="en-text">Return to nature. Move without borders.</span>
         </div>
     </footer>
 
